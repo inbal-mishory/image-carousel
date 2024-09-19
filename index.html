@@ -1,63 +1,64 @@
 <html>
   <head>
     <!-- Our unique tag to identify the solution -->
-    <bds />
+    <!-- <bds /> -->
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BigDevSoon Challenge</title>
-
-    <!-- TailwindCSS for styling. Feel free to integrate other libraries as needed -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Add your external script links here, if any -->
+    <title>BigDevSoon Image Carousel Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   </head>
 
-  <body
-    class="bg-gray-900 flex flex-col items-center justify-center min-h-screen"
-  >
-    <div
-      class="bg-white text-gray-800 p-8 space-y-4 shadow rounded-xl max-w-md md:max-w-lg"
-    >
-      <!-- Logo and Title -->
-      <img
-        src="https://mqzzwgavxmdmqvivwgez.supabase.co/storage/v1/object/public/previews/logo-challenge-template.svg"
-        alt="BigDevSoon Logo"
-        class="w-150 mx-auto"
-      />
-      <!-- Introduction and Instructions -->
-      <p class="text">
-        Utilize the tabs in <strong>BigDevSoon's challenge page</strong> to
-        access everything you need. The <strong>Instructions</strong> tab
-        contains specific details for implementing this task.
-      </p>
-
-      <!-- Encouragement for Creativity and Interaction -->
-      <ul class="list-disc list-inside space-y-2">
-        <li>
-          Be <strong>creative!</strong> Don't hesitate to bring your unique
-          ideas to life.
-        </li>
-        <li>
-          Interact with <strong>ChatGPT</strong> for coding assistance and
-          hints.
-        </li>
-        <li>
-          Connect with other developers who are tackling the same challenge in
-          the <strong>People</strong> tab.
-        </li>
-        <li>
-          Need a nudge in the right direction? Check out the
-          <strong>Help</strong> tab.
-        </li>
-      </ul>
-
-      <p class="text-sm border-t pt-6">
-        <strong>Tip</strong>: This example uses TailwindCSS for styling. Feel
-        free to integrate any other libraries using their respective CDNs to
-        enhance your project.
-      </p>
-    </div>
+  <body>
+    <main>
+      <section class="large-image">
+        <div>
+          <img class="main-image" src="assets/vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg" alt="Changing image"/>
+          <div class="main-image-title">
+            Photo by Vincent van Zalinge
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <button class="arrow-left">
+                <img src="assets/arrow-forward.svg" width="24" height="24" alt="">
+              </button>
+            </li>
+            <li>
+              <button class="arrow-right">
+                <img src="assets/arrow-back.svg" width="24" height="24" alt="">
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="carousel-container">
+        <div class="carousel">
+          <img class="carousel-item-image active" src="assets/vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg" width="235" height="243" id="0" alt="Photo by Vincent van Zalinge" title="Photo by Vincent van Zalinge"/>
+          <img class="carousel-item-image" src="assets/aaron-burden-yzgF-AQt1sQ-unsplash.jpg" width="235" height="243" id="1" alt="Photo by Aaron Burden" title="Photo by Aaron Burden"/>
+          <img class="carousel-item-image" src="assets/daniil-silantev-F6Da4r2x5to-unsplash.jpg" width="235" height="243" id="2" alt="Photo by Daniil Silantev" title="Photo by Daniil Silantev"/>
+          <img class="carousel-item-image" src="assets/fabian-quintero-UWQP2mh5YJI-unsplash.jpg" width="235" height="243" id="3" alt="Photo by Fabian Quintero" title="Photo by Fabian Quintero"/>
+          <img class="carousel-item-image" src="assets/niko-photos-tGTVxeOr_Rs-unsplash.jpg" width="235" height="243" id="4" alt="Photo by Niko Photos" title="Photo by Niko Photos"/>
+          <img class="carousel-item-image" src="assets/qingbao-meng-01_igFr7hd4-unsplash.jpg" width="235" height="243" id="5" alt="Photo by Qingbao Meng" title="Photo by Qingbao Meng"/>
+          
+        </div>
+      </section>
+    </main>
+    <!-- Photo by <a href="https://unsplash.com/@vincentvanzalinge?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Vincent van Zalinge</a> on <a href="https://unsplash.com/photos/selective-focus-photography-of-blue-kingfisher-vUNQaTtZeOo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+   -->
+    <!-- Photo by <a href="https://unsplash.com/@ideasboom?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Qingbao Meng</a> on <a href="https://unsplash.com/photos/birds-eye-view-photograph-of-green-mountains-01_igFr7hd4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+   -->
+    <!-- Photo by <a href="https://unsplash.com/@niko_photos?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">niko photos</a> on <a href="https://unsplash.com/photos/green-leaf-tree-under-blue-sky-tGTVxeOr_Rs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+   -->
+    <!-- Photo by <a href="https://unsplash.com/@onefabian?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Fabian Quintero</a> on <a href="https://unsplash.com/photos/green-leafed-trees-UWQP2mh5YJI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+   -->
+    <!-- Photo by <a href="https://unsplash.com/@betagamma?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Daniil Silantev</a> on <a href="https://unsplash.com/photos/green-leaves-F6Da4r2x5to?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+   -->
+    <!-- Photo by <a href="https://unsplash.com/@aaronburden?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aaron Burden</a> on <a href="https://unsplash.com/photos/shallow-focus-photo-of-white-flowers-yzgF-AQt1sQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+    
   </body>
 </html>
