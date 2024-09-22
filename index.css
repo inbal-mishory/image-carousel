@@ -32,7 +32,7 @@ img, picture, video, canvas, svg {
 
 main {
   position: relative;
-  width: 1519px;
+  width: 1300px;
   display: grid;
   margin: 0 auto;
   padding-top: 6rem;
@@ -93,12 +93,20 @@ nav ul {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  width: 1300px;
+  height: 325px;
 }
 
 .carousel {
   display: flex;
   gap: 1.2rem;
   padding: 6rem 1.2rem 2.2rem 1.2rem;
+  position: absolute;
+  top: 0;
+  right: 100px;
+  height: 325px;
+  width: 1300px;
+  z-index: 11;
 }
 
 .carousel.sliding-transition {
@@ -108,7 +116,6 @@ nav ul {
 .carousel-item-image {
   width: 235px;
   height: 243px;
-  border-radius: 1.2rem;
   border: 2px solid var(--colorTransparent);
   transition: all ease 0.5s;  
   object-fit: cover;
